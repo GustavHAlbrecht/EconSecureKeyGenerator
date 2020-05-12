@@ -3,5 +3,6 @@ Idea: Combine a human-unique identifier like FirstnameLastnameBirthdateBirthplac
 
 Example 1: c= 10$ n= 6 
 Cost to extract private key = (10^6)/2 * 10 $ = 5,000,000 $
+<br>
 Example 2: c= 1$ n= 8
 Cost to extract private key = (10^8)/2 * 1$ = 50,000,000$

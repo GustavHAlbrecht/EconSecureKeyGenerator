@@ -3,13 +3,13 @@
 
 <p>Example 1: c= 10$ n= 6 
 <br>
-Cost to extract private key = (10^6)/2 * 10 $ = 5,000,000 $
+Cost to extract private key = (10^6)/2 * 10 $ = 5,000,000.00 $
 <br></p>
 <p>Example 2: c= 1$ n= 8
 <br>
-Cost to extract private key = (10^8)/2 * 1$ = 50,000,000$</p>
+Cost to extract private key = (10^8)/2 * 1$ = 50,000,000.00$</p>
 <p>Example 3: c=1$ n=6
 <br>
-Cost to extract private key = (10^6)/2 * 10 $ = 500,000$</p>
+Cost to extract private key = (10^6)/2 * 10 $ = 500,000.00$</p>
 
-<strong>Application:</strong> A typical user will probably hold less than 500,000$ in cryptocurrency. For such a user it is reasonable to generate a private key using values from example 3. Advantages: If a user loses his private keys he can easily generate them again if he knows the 6 decimal places long pin code. The cost of doing so will be 1$ in this case. An attacker who does not know the secret number will have to invest 500,000$ on average to extract the key.
+<strong>Application:</strong> A typical user will probably hold less than 500,000$ in cryptocurrency. For such a user it is reasonable to generate a private key using values from example 3. Advantages: If a user loses his private keys he can easily generate them again if he knows the 6 decimal places long pin code. The cost of doing so will be 1$ in this case. An attacker who does not know the secret number will have to invest 500,000.00$ on average to extract the key.

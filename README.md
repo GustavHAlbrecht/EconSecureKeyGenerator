@@ -16,5 +16,6 @@ Cost to extract private key = (10^6)/2 * 10 $ = 500,000.00$</p>
 
 <strong>Assumptions:</strong>
 <ol>
-  <li>Secret pin codes must be chosen randomly from the pin code space by users. Otherwise an attacker can exploit heuristics and the average trials to find the right pin code will be less than (10^n)/2 </li>
+  <li>Secret pin codes must be chosen randomly from the pin code space by users. Otherwise an attacker can exploit heuristics and the average trials to find the right pin code will be less than (10^n)/2.  </li>
+  <li> The cost c of running the algorithm must be the same for everbody.  </li>
  </ol>

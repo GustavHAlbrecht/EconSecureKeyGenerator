@@ -8,3 +8,7 @@ Cost to extract private key = (10^6)/2 * 10 $ = 5,000,000 $
 Example 2: c= 1$ n= 8
 <br>
 Cost to extract private key = (10^8)/2 * 1$ = 50,000,000$
+Example 3: c=1$ n=6
+<br>
+Cost to extract private key = (10^6)/2 * 10 $ = 500,000$
+

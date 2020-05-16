@@ -7,10 +7,10 @@ Cost to extract private key = (10<sup>6</sup>)/2 * 10 $ = 5,000,000.00 $
 <br></p>
 <p>Example 2: c= 1$ n= 8
 <br>
-Cost to extract private key = (10^<sup>8</sup>)/2 * 1$ = 50,000,000.00$</p>
+Cost to extract private key = (10<sup>8</sup>)/2 * 1$ = 50,000,000.00$</p>
 <p>Example 3: c=1$ n=6
 <br>
-Cost to extract private key = (10^<sup>6</sup>)/2 * 10 $ = 500,000.00$</p>
+Cost to extract private key = (10<sup>6</sup>)/2 * 10 $ = 500,000.00$</p>
 
 <strong>Application:</strong> A typical user will probably hold less than 500,000.00$ in cryptocurrency. For such a user it is reasonable to generate a private key using values from example 3. Advantages: If a user loses his private keys he can easily generate them again if he knows the 6 decimal places long pin code (an his FirstnameLastnameBirthdateBirthplace). There is no need to store a seedphrase anywhere. The cost of doing so will be 1$ in this case. An attacker who does not know the secret number will have to invest 500,000.00$ on average to extract the key. No rational attacker will perform such an attack when the average costs are much higher than the average profit.
 

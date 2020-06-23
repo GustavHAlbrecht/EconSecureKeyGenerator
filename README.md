@@ -1,7 +1,7 @@
 # EconSecureKeyGenerator
 <strong>Idea:</strong> Combine a human-unique identifier like FirstnameLastnameBirthdateBirthplace and a secret 6-8 digest pin code. Use the resulting bit sequence to generate a private key. The algorithm to do so must be computationally intensive and therefore costly. This can be achieved by using repeated hashing:
 <br>
-<i>Key = H(...H((H(H(FirstnameLastnameBirthdateBirthplace + secret pin code)))..).</i>
+<p>Key = H(...H((H(H(FirstnameLastnameBirthdateBirthplace + secret pin code)))..).</p>
 <br>
 Suppose costs of generating a private key are c. Suppose further the secret pin code has n digest and therefore the pin space contains 10<sup>n</sup> differnt pin codes. Given that an attacker knows the human-unique identifier and assuming pin codes are chosen randomly by users the attacker would have to try (10<sup>n</sup>)/2 differnt pin codes on average to find the right one.To check if a pin code is the right one the attacker would have to run the algorithm using the pin code and the human-unique identifier. Because he would have to run the algorithm (10<sup>n</sup>)/2 times on average until he finds the right pin code this attack would imply cost of (10<sup>n</sup>)/2 *c.
 

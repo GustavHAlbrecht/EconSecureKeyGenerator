@@ -1,8 +1,8 @@
 # EconSecureKeyGenerator
 <strong>Idea:</strong> Combine a human-unique identifier like FirstnameLastnameBirthdateBirthplace and a secret 6-8 digest pin code. Use the resulting bit sequence to generate a private key. The algorithm to do so must be computationally intensive and therefore costly. This can be achieved by using repeated hashing:
-
+<br>
 <i>Key = H(...H((H(H(FirstnameLastnameBirthdateBirthplace + secret pin code)))..).</i>
-
+<br>
 Suppose costs of generating a private key are c. Suppose further the secret pin code has n digest and therefore the pin space contains 10<sup>n</sup> differnt pin codes. Given that an attacker knows the human-unique identifier and assuming pin codes are chosen randomly by users the attacker would have to try (10<sup>n</sup>)/2 differnt pin codes on average to find the right one.To check if a pin code is the right one the attacker would have to run the algorithm using the pin code and the human-unique identifier. Because he would have to run the algorithm (10<sup>n</sup>)/2 times on average until he finds the right pin code this attack would imply cost of (10<sup>n</sup>)/2 *c.
 
 <p>Example 1: c= 10$ n= 6 
@@ -21,6 +21,6 @@ Cost to extract private key = (10<sup>6</sup>)/2 * 10 $ = 500,000.00$</p>
 <strong>Assumptions:</strong>
 <ol>
   <li>Secret pin codes must be chosen randomly from the pin code space by users. Otherwise an attacker can exploit heuristics and the average trials to find the right pin code will be less than (10<sup>n</sup>)/2.  </li>
-  <li> The costs c of running the algorithm must be the same for everbody.</li>
+  <li> The costs c of running the algorithm must be the same for everbody. Using repeated hashing where the previous hash is the input to the next hash function reduces parallel execution. Probably holding up to this assumption will require application specific third partys running the repeated hashing </li>
   <li> The algorithm is a mapping from the combination of the human-unique identifiers and the secret pin code to the private key space. For two differnt persons every possible private key in the private key space must be equally probable.</li>
  </ol>
